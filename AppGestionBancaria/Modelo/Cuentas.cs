@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppGestionBancaria
+namespace AppGestionBancaria.Modelo
 {
     public class Cuentas
     {

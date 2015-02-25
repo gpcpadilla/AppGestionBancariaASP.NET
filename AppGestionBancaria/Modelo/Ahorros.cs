@@ -4,43 +4,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppGestionBancaria
+namespace AppGestionBancaria.Modelo
 {
-    public class Cheques :Cuentas
+    public class Ahorros :Cuentas
     {
+
         #region "Atributos"
-        private string idtalonario;
-        #endregion
+        private double tasainteres;
+         #endregion
 
         #region "Propiedades"
 
         /// <summary>
         /// Establece o retorna el valor de la identificación
         /// </summary>
-        public string IdeTalonario
+        public double TasaInteres
         {
-            get { return idtalonario; }
-            set { idtalonario = value; }
+            get { return tasainteres; }
+            set { tasainteres = value; }
         }
-
+        
         #endregion
 
          #region "Constructores"
-        public  Cheques()
+        public Ahorros()
             : base()
         {
-            this.idtalonario ="id001" ;
             
+            this.tasainteres = 1.2;
             
         }
 
-        public Cheques(string id, string balance, string idcliente, string idtalonario)
+        public Ahorros(string id, string balance, string idcliente, double tasainteres)
             : base(id,balance,idcliente)
         {
-            this.idtalonario = idtalonario;
-            
+            this.tasainteres = tasainteres;
             
         }
+
+
         #endregion
 
         #region "Métodos Sobre Escritos"
@@ -48,17 +50,16 @@ namespace AppGestionBancaria
         {
             return base.ToString() +
                    
-                   "\nIdentiicacion del talonario: " + this.idtalonario;
+                   "\nTasaInteres: " + this.tasainteres;
         }
 
         public override bool Equals(object obj)
         {
-            Cheques o = (Cheques)obj;
+            Ahorros o = (Ahorros)obj;
             bool result = false;
 
             if (base.Equals(o) &&
-               
-                (this.idtalonario == o.idtalonario))
+               (this.tasainteres == o.tasainteres))
                 result = true;
 
             return result;
@@ -70,8 +71,7 @@ namespace AppGestionBancaria
         }
         #endregion
 
-
-          #region "Metodos"
+        #region "Metodos"
         public void BalanceAtual(Saldo); 
         public void Depositar(BalanceActual + deposito); 
         public void Retirar(BalanceActual - Retiro);

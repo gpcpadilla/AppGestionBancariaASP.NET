@@ -41,18 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ahorros.cs" />
-    <Compile Include="Cheque.cs" />
-    <Compile Include="Corrientes.cs" />
-    <Compile Include="Cuentas.cs" />
+    <Compile Include="Modelo\Ahorros.cs" />
+    <Compile Include="Modelo\Cheque.cs" />
+    <Compile Include="Modelo\Corrientes.cs" />
+    <Compile Include="Modelo\Cuentas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
-    <None Include="ClassDiagram2.cd" />
-    <None Include="ClassDiagram3.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Datos\" />
+    <Folder Include="Web\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

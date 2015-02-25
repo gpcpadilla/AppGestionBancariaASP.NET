@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppGestionBancaria
+namespace AppGestionBancaria.Modelo
 {
     public class Corrientes :Cuentas
     {
@@ -93,6 +93,13 @@ namespace AppGestionBancaria
         {
             return this.ToString().GetHashCode();
         }
+        #endregion
+
+        
+         #region "Metodos"
+        public void BalanceAtual(Saldo); 
+        public void Depositar(BalanceActual + deposito); 
+        public void Retirar(BalanceActual - Retiro);
         #endregion
     }
 }
