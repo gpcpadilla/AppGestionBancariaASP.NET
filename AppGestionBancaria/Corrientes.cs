@@ -94,9 +94,7 @@ namespace AppGestionBancaria
             return this.ToString().GetHashCode();
         }
         
-        #region "Métodos"
         
-       #endregion
         
     }
 }
