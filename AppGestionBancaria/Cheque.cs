@@ -70,5 +70,11 @@ namespace AppGestionBancaria
         }
         #endregion
 
+
+          #region "Metodos"
+        public void BalanceAtual(Saldo); 
+        public void Depositar(BalanceActual + deposito); 
+        public void Retirar(BalanceActual - Retiro);
+        #endregion
     }
 }
